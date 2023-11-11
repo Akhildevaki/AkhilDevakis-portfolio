@@ -1,7 +1,13 @@
 import "./hero.scss";
 
-export const Hero = () => {
+const Hero = () => {
   return (
-    <div className="hero">Hero</div>
-  )
-}
+    <div className="hero">
+      <div className="imagecontainer">
+        <img src="./dp-removebg-preview.png" alt="AI_Image" height="620px" />
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

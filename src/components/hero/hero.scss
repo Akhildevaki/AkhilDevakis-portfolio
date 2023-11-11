@@ -1,4 +1,15 @@
-.hero{
-    height: calc(100vh - 100px);
-    background: linear-gradient(180deg,);
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  overflow: hidden;
+  position: relative;
+
+  .imagecontainer {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding-top: 30px;
+    padding-right: 70px;
+  }
 }
