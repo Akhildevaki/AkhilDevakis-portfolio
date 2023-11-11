@@ -1,4 +1,4 @@
-import "./WorkExperience.css";
+import "./workExperience.css";
 import "../../app.scss";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
