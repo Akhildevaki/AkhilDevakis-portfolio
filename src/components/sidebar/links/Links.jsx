@@ -29,7 +29,7 @@ export const Links = () => {
   const items = [
     "Home",
     "Skills",
-    "Work Experience",
+    "Experience",
     "Projects",
     "Contact",
     "About",
