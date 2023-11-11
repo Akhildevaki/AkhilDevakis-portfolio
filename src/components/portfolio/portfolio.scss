@@ -43,8 +43,12 @@
 
       @include mobile {
         flex-direction: column;
-        height: 70%;
-        padding-top: 20%;
+        height: 60%;
+        padding-top: 50%;
+        margin-top: 40px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
       }
     }
 
@@ -83,6 +87,7 @@
         padding: 10px;
         text-align: center;
         align-items: center;
+        padding-top: 80px;
       }
 
       h2 {

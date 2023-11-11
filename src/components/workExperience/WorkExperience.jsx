@@ -80,7 +80,7 @@ const WorkExperience = () => {
               different kind of school events and also leading committees for
               clubs, carnivals and other organized events.
             </p>
-            <span className="lefttArrow"></span>
+            <span className="leftArrow"></span>
           </div>
         </div>
 

@@ -56,6 +56,10 @@
       white-space: nowrap;
       font-weight: bold;
       width: 100%;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     h2 {

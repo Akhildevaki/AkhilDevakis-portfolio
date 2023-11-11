@@ -136,3 +136,56 @@
   border-right: 17px solid orange;
   left: -15px;
 }
+
+@media screen and (max-width: 738px) {
+  .contain {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 35px;
+  }
+
+  .textBox {
+    margin-left: 15px;
+    padding-left: 20px;
+  }
+  .timeline {
+    margin: 50px auto;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+  .textBox {
+    font-size: 13px;
+  }
+
+  .textBox small {
+    margin-bottom: 10px;
+  }
+
+  .rightContainer {
+    left: 0;
+  }
+
+  .leftContainer img{
+    left: 10px;
+  }
+  .rightContainer img {
+    left: 10px;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    border-right: 15px solid orange;
+    border-left: 0;
+    left: 15px;
+    top: 20px;
+  }
+
+  .rightArrow {
+    left: -9px;
+  }
+
+  .leftArrow {
+    left: -10px;
+  }
+}
