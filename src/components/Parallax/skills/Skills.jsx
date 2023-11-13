@@ -3,20 +3,24 @@ import "./skills.scss";
 import { motion, useInView } from "framer-motion";
 
 const Skills = () => {
-  const variants = {
-    initial: {
-      x: -500,
-      opacity: 0,
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 2,
-        staggerchildren: 0.1,
+  let variants = {};
+  const isMobile = window.innerWidth <= 768;
+  if (!isMobile) {
+    variants = {
+      initial: {
+        x: -500,
+        opacity: 0,
       },
-    },
-  };
+      animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 2,
+          staggerchildren: 0.1,
+        },
+      },
+    };
+  }
 
   const ref = useRef();
 
@@ -24,7 +28,13 @@ const Skills = () => {
 
   return (
     <section id="Talent">
-      <motion.div className="skills">
+      <motion.div
+        className="skills"
+        variants={variants}
+        initial="initial"
+        ref={ref}
+        animate={isinView && "animate"}
+      >
         <motion.div className="skillsContainer">
           <div className="html">
             <img src="./html.png" width="100px" height="100px" />
