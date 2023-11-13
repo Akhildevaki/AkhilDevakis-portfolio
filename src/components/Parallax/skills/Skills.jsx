@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import "./skills.scss";
-import "../../../app.scss";
 import { motion, useInView } from "framer-motion";
 
 const Skills = () => {
@@ -25,14 +24,8 @@ const Skills = () => {
 
   return (
     <section id="Talent">
-      <motion.div
-        className="skills"
-        variants={variants}
-        initial="initial"
-        ref={ref}
-        animate={isinView && "animate"}
-      >
-        <motion.div className="skillsContainer" variants={variants}>
+      <motion.div className="skills">
+        <motion.div className="skillsContainer">
           <div className="html">
             <img src="./html.png" width="100px" height="100px" />
           </div>

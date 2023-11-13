@@ -9,7 +9,7 @@
 .skills {
   height: 100%;
   width: 100%;
-  background: "linear-gradient(180deg, #0c0c1d, #505064)";
+  background-color: "linear-gradient(180deg, #0c0c1d, #505064)";
   background-image: url("/stars.png");
   display: flex;
   flex-direction: column;
@@ -20,6 +20,22 @@
     background: "linear-gradient(180deg, #0c0c1d, #505064)";
     background-image: url("/stars.png");
     display: flex;
+  }
+
+  .skillscontainer {
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+
+    @include mobile {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
   }
 
   .skillsContainer {
@@ -58,21 +74,5 @@
     cursor: pointer;
     height: 200px;
     width: 205px;
-  }
-
-  .skillscontainer {
-    width: 1200px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-
-    @include mobile {
-      width: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-    }
   }
 }
